@@ -1,13 +1,17 @@
 package com.example;
-
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        RevengeFulStack stack = new RevengeFulStack(30);
+        try {
+            stack.push(5);
+            stack.push(10);
+            stack.printStack();
+            stack.push(16);
+            stack.push(50);
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
     }
 }
